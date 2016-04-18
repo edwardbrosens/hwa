@@ -1,0 +1,50 @@
+/******************************************************
+ * @package Venus Theme Framework for Magento 2.x
+ * @version 1.0
+ * @author http://www.venustheme.com
+ * @copyright Copyright (C) Augus 2015 VenusThemes.com <@email:venusthemes@gmail.com>.All rights reserved.
+ * @license   GNU General Public License version 1
+*******************************************************/
+
+@import "source/lib/_variables.less";
+@import "bootstrap/_variables.less";
+@import "bootstrap/_mixins.less";
+
+@import "magento/_variables.less";
+@import "magento/_layout.less";
+@import "magento/_block.less";
+@import "magento/_menu.less";
+@import "magento/_responsive.less";
+
+
+// Custom Theme Overrides
+
+header.page-header { 
+    .panel.wrapper {
+        height: 50px;
+        background-color: #2b2829;
+    }
+    
+    .header.content {
+        height: 690px;
+        background-image: url('../images/bg_header.jpg');
+    }
+    
+}
+
+ul.header.links {
+    text-align: right;
+    li {
+        a {
+            color: white !important;
+            text-shadow: 1px 1px 0px #000 !important;          
+        }
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+}
+
+
