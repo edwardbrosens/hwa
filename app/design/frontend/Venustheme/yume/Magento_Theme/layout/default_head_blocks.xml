@@ -31,6 +31,6 @@
 								
 		<!-- Remove external resources -->
         <!-- <remove src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"/> -->
-         <script src="js/ambacht.js" />
+         <!--<script src="js/ambacht.js" />-->
     </head>
 </page>
