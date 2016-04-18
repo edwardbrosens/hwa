@@ -7,6 +7,7 @@
 -->
 <layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
     <update handle="empty"/>
+
     <referenceContainer name="page.wrapper">
         <container name="header.container" as="header_container" label="Page Header Container"  htmlTag="header" htmlClass="page-header" before="main.content"/>
 
@@ -21,9 +22,12 @@
         <container name="ves-masstop1" as="ves-masstop1" label="Ves Masstop1" htmlTag="div" htmlClass="ves-masstop1 page-main" after="ves-masstop"/>
 
         <container name="ves-massbottom" as="ves-massbottom" label="Ves MassBottom" htmlTag="div" htmlClass="ves-massbottom page-main" after="ves-masstop1"/>
+
+        <container name="steps.container" as="steps_container" htmlTag="div" htmlClass="steps-container" label="Steps" after="ves-massbottom" />
         
         <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer" />
     </referenceContainer>
+
     
     <referenceContainer name="header.panel">
         <block class="Magento\Framework\View\Element\Html\Links" name="header.links">

@@ -18,13 +18,16 @@
             </arguments>
         </referenceBlock>
         
-        <!--<referenceContainer name="header-wrapper">
-            <block class="Magento\Cms\Block\Block" name="block-header-image">
-                <arguments>
-                    <argument name="block_id" xsi:type="string">block-header-image</argument>
-                </arguments>
-            </block>
-        </referenceContainer>-->
+        <referenceContainer name="content">
+           <container name="steps.container" htmlClass="steps" htmlTag="div">
+               <block class="Magento\Cms\Block\Block" name="steps">
+                   <arguments>
+                       <argument name="block_id" xsi:type="string">steps</argument>
+                       <argument name="css_class" xsi:type="string">steps</argument>
+                   </arguments>
+               </block>
+           </container>
+        </referenceContainer>
         
         <referenceContainer name="footer-container">
             <container name="footer-top" label="Footer Top" htmlTag="div" htmlClass="footer-top page-main">
