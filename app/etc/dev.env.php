@@ -26,7 +26,7 @@ return array (
         'host' => '127.0.0.1',
         'dbname' => 'ambacht',
         'username' => 'root',
-        'password' => 'root',
+        'password' => 'M2MOx7gazzu2',
         'active' => '1',
       ),
     ),
