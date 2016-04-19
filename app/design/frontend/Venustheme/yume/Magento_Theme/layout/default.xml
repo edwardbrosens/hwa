@@ -43,7 +43,7 @@
                 <argument name="logo_img_height" xsi:type="number">40</argument>
             </arguments>
         </referenceBlock>
-        
+
         <referenceContainer name="content">
            <container name="steps.container" htmlClass="steps" htmlTag="div">
                <block class="Magento\Cms\Block\Block" name="block-header-image">
@@ -54,7 +54,17 @@
                </block>
            </container>
         </referenceContainer>
-        
+
+
+        <referenceContainer name="choose.container">
+            <block class="Magento\Cms\Block\Block" name="choose">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">choose</argument>
+                    <argument name="css_class" xsi:type="string">choose</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
         <referenceContainer name="footer-container">
             <container name="footer-top" label="Footer Top" htmlTag="div" htmlClass="footer-top page-main">
                 <block class="Magento\Cms\Block\Block" name="block-footertop">

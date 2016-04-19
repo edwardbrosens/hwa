@@ -24,9 +24,13 @@
         <container name="ves-massbottom" as="ves-massbottom" label="Ves MassBottom" htmlTag="div" htmlClass="ves-massbottom page-main" after="ves-masstop1"/>
 
         <container name="steps.container" as="steps_container" htmlTag="div" htmlClass="steps-container" label="Steps" after="ves-massbottom" />
-        
+
+        <container name="choose.container" as="choose_container" htmlTag="div" htmlClass="choose-container" label="Choose" after="main.content" />
+
         <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer" />
     </referenceContainer>
+
+
 
     
     <referenceContainer name="header.panel">
