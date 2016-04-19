@@ -9,7 +9,33 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="store.settings.language" remove="true"/>
-       
+        <referenceBlock name="top.links">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="zo-werkt-het">
+                <arguments>
+                    <argument name="label" xsi:type="string">zo werkt het</argument>
+                    <argument name="path" xsi:type="string">zo-werkt-het</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="assortiment">
+                <arguments>
+                    <argument name="label" xsi:type="string">assortiment</argument>
+                    <argument name="path" xsi:type="string">assortiment</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="bestellen">
+                <arguments>
+                    <argument name="label" xsi:type="string">bestellen</argument>
+                    <argument name="path" xsi:type="string">bestellen</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="contact">
+                <arguments>
+                    <argument name="label" xsi:type="string">contact</argument>
+                    <argument name="path" xsi:type="string">contact</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+
         <referenceBlock name="logo">
             <arguments>
                 <argument name="logo_file" xsi:type="string">images/logo.png</argument>

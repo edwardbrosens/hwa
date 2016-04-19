@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461023931;s:6:"expire";i:9999999999;s:4:"tags";s:115:"58f_DEFAULT,58f_CMS_INDEX_INDEX,58f_CMS_PAGE_VIEW,58f_CMS_INDEX_INDEX_ID_HOME,58f_LAYOUT_GENERAL_CACHE_TAG,58f_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461090994;s:6:"expire";i:9999999999;s:4:"tags";s:115:"58f_DEFAULT,58f_CMS_INDEX_INDEX,58f_CMS_PAGE_VIEW,58f_CMS_INDEX_INDEX_ID_HOME,58f_LAYOUT_GENERAL_CACHE_TAG,58f_MAGE";}
 <!--
     <referenceContainer name="right">
         <action method="unsetChild"><argument name="alias" xsi:type="string">right.reports.product.viewed</argument></action>
@@ -598,6 +598,32 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461023931;s:6:"expire";i:9999999999;s:4:"t
 </body>
 <body>
    <referenceBlock name="store.settings.language" remove="true"/>
+   <referenceBlock name="top.links">
+      <block class="Magento\Framework\View\Element\Html\Link\Current" name="zo-werkt-het">
+         <arguments>
+            <argument name="label" xsi:type="string">zo werkt het</argument>
+            <argument name="path" xsi:type="string">zo-werkt-het</argument>
+         </arguments>
+      </block>
+      <block class="Magento\Framework\View\Element\Html\Link\Current" name="assortiment">
+         <arguments>
+            <argument name="label" xsi:type="string">assortiment</argument>
+            <argument name="path" xsi:type="string">assortiment</argument>
+         </arguments>
+      </block>
+      <block class="Magento\Framework\View\Element\Html\Link\Current" name="bestellen">
+         <arguments>
+            <argument name="label" xsi:type="string">bestellen</argument>
+            <argument name="path" xsi:type="string">bestellen</argument>
+         </arguments>
+      </block>
+      <block class="Magento\Framework\View\Element\Html\Link\Current" name="contact">
+         <arguments>
+            <argument name="label" xsi:type="string">contact</argument>
+            <argument name="path" xsi:type="string">contact</argument>
+         </arguments>
+      </block>
+   </referenceBlock>
    <referenceBlock name="logo">
       <arguments>
          <argument name="logo_file" xsi:type="string">images/logo.png</argument>
