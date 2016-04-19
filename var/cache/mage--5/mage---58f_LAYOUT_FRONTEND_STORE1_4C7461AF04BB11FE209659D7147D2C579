@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461011576;s:6:"expire";i:9999999999;s:4:"tags";s:115:"58f_DEFAULT,58f_CMS_INDEX_INDEX,58f_CMS_PAGE_VIEW,58f_CMS_INDEX_INDEX_ID_HOME,58f_LAYOUT_GENERAL_CACHE_TAG,58f_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461023931;s:6:"expire";i:9999999999;s:4:"tags";s:115:"58f_DEFAULT,58f_CMS_INDEX_INDEX,58f_CMS_PAGE_VIEW,58f_CMS_INDEX_INDEX_ID_HOME,58f_LAYOUT_GENERAL_CACHE_TAG,58f_MAGE";}
 <!--
     <referenceContainer name="right">
         <action method="unsetChild"><argument name="alias" xsi:type="string">right.reports.product.viewed</argument></action>
@@ -605,6 +605,16 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461011576;s:6:"expire";i:9999999999;s:4:"t
          <argument name="logo_img_height" xsi:type="number">40</argument>
       </arguments>
    </referenceBlock>
+   <referenceContainer name="content">
+      <container name="steps.container" htmlClass="steps" htmlTag="div">
+         <block class="Magento\Cms\Block\Block" name="block-header-image">
+            <arguments>
+               <argument name="block_id" xsi:type="string">steps</argument>
+               <argument name="css_class" xsi:type="string">steps</argument>
+            </arguments>
+         </block>
+      </container>
+   </referenceContainer>
    <referenceContainer name="footer-container">
       <container name="footer-top" label="Footer Top" htmlTag="div" htmlClass="footer-top page-main">
          <block class="Magento\Cms\Block\Block" name="block-footertop">

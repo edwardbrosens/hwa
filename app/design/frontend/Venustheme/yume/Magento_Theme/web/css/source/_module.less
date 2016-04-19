@@ -61,12 +61,12 @@ body {
 
 .header {
     &.content {
-        padding-top: @indent__s;
+        padding-top: 0;
         position: relative;
         &:extend(.abs-add-clearfix all);
-        background: #ffffff url('../images/bg_header.jpg') top left;
-        background-size: cover;
-        min-height: 325px;
+        background: #ffffff url('../images/bg_header.jpg') no-repeat top left;
+        background-size: 100%;
+        height: 0;
     }
     .compare {
         display: none;
@@ -275,6 +275,7 @@ body {
                     a {
                         color: white;
                         text-shadow: 1px 1px 0px #000000;
+                        text-decoration: none;
                         // &:hover, &:focus {
                         //     color: #000;
                         //     text-decoration: none;
@@ -299,7 +300,7 @@ body {
             }
         }
         &.content {
-            padding: @indent__l @indent__base 0;
+            padding:0;
             &:extend(.abs-add-clearfix-desktop all);
         }
     }
@@ -388,4 +389,59 @@ body {
 
 .cms-home .nav-sections {
     display: none !important;
+}
+
+// Custom Theme Overrides
+
+header.page-header {
+    .panel.wrapper {
+        height: 50px;
+        background-color: #2b2829;
+    }
+
+    .header.content {
+        height:0 !important;
+    }
+
+}
+
+ul.header.links {
+    text-align: right;
+    li {
+        a {
+            color: white !important;
+            text-shadow: 1px 1px 0px #000 !important;
+        }
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+}
+
+.steps {
+    margin: 0;
+    padding: 0;
+    img {
+        width: 100%;
+    }
+}
+
+.block-search, .minicart-wrapper, .block-search {
+    display: none !important;
+}
+
+
+.page-title-wrapper {
+    display: none !important;
+}
+
+.page-main {
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+
+.page {
+    padding: 50px !important;
 }

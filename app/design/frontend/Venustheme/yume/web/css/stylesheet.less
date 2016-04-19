@@ -26,8 +26,7 @@ header.page-header {
     }
     
     .header.content {
-        height: 690px;
-        background-image: url('../images/bg_header.jpg');
+        height:0 !important;
     }
     
 }
@@ -37,7 +36,7 @@ ul.header.links {
     li {
         a {
             color: white !important;
-            text-shadow: 1px 1px 0px #000 !important;          
+            text-shadow: 1px 1px 0px #000 !important;
         }
     }
 }
@@ -48,7 +47,15 @@ ul.header.links {
 }
 
 .steps {
-    margin-top: -100px;
+    margin: 0;
+    padding: 0;
+    img {
+        width: 100%;
+    }
+}
+
+.block-search, .minicart-wrapper, .block-search {
+    display: none !important;
 }
 
 

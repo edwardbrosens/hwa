@@ -22,7 +22,7 @@ module.exports = {
     blank: {
         area: 'frontend',
         name: 'Magento/blank',
-        locale: 'en_US',
+        locale: 'nl_NL',
         files: [
             'css/styles-m',
             'css/styles-l',
@@ -56,7 +56,7 @@ module.exports = {
     backend: {
         area: 'adminhtml',
         name: 'Magento/backend',
-        locale: 'en_US',
+        locale: 'nl_NL',
         files: [
             'css/styles-old',
             'css/styles'

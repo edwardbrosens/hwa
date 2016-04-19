@@ -20,7 +20,7 @@
         
         <referenceContainer name="content">
            <container name="steps.container" htmlClass="steps" htmlTag="div">
-               <block class="Magento\Cms\Block\Block" name="steps">
+               <block class="Magento\Cms\Block\Block" name="block-header-image">
                    <arguments>
                        <argument name="block_id" xsi:type="string">steps</argument>
                        <argument name="css_class" xsi:type="string">steps</argument>
