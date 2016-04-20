@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461094420;s:6:"expire";i:9999999999;s:4:"tags";s:49:"58f_1COLUMN,58f_LAYOUT_GENERAL_CACHE_TAG,58f_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461174748;s:6:"expire";i:9999999999;s:4:"tags";s:49:"58f_1COLUMN,58f_LAYOUT_GENERAL_CACHE_TAG,58f_MAGE";}
 <container name="root">
    <container name="after.body.start" as="after.body.start" before="-" label="Page Top"/>
    <container name="page.wrapper" as="page_wrapper" htmlTag="div" htmlClass="page-wrapper">
@@ -48,6 +48,24 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461094420;s:6:"expire";i:9999999999;s:4:"t
    <container name="steps.container" as="steps_container" htmlTag="div" htmlClass="steps-container" label="Steps" after="ves-massbottom"/>
    <container name="choose.container" as="choose_container" htmlTag="div" htmlClass="choose-container" label="Choose" after="main.content"/>
    <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
+</referenceContainer>
+<referenceContainer name="content">
+   <container name="steps.container" htmlClass="steps" htmlTag="div">
+      <block class="Magento\Cms\Block\Block" name="block-header-image">
+         <arguments>
+            <argument name="block_id" xsi:type="string">steps</argument>
+            <argument name="css_class" xsi:type="string">steps</argument>
+         </arguments>
+      </block>
+   </container>
+</referenceContainer>
+<referenceContainer name="choose.container">
+   <block class="Magento\Cms\Block\Block" name="choose">
+      <arguments>
+         <argument name="block_id" xsi:type="string">choose</argument>
+         <argument name="css_class" xsi:type="string">choose</argument>
+      </arguments>
+   </block>
 </referenceContainer>
 <referenceContainer name="header.panel">
    <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
@@ -75,6 +93,24 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461094420;s:6:"expire";i:9999999999;s:4:"t
    <container name="steps.container" as="steps_container" htmlTag="div" htmlClass="steps-container" label="Steps" after="ves-massbottom"/>
    <container name="choose.container" as="choose_container" htmlTag="div" htmlClass="choose-container" label="Choose" after="main.content"/>
    <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
+</referenceContainer>
+<referenceContainer name="content">
+   <container name="steps.container" htmlClass="steps" htmlTag="div">
+      <block class="Magento\Cms\Block\Block" name="block-header-image">
+         <arguments>
+            <argument name="block_id" xsi:type="string">steps</argument>
+            <argument name="css_class" xsi:type="string">steps</argument>
+         </arguments>
+      </block>
+   </container>
+</referenceContainer>
+<referenceContainer name="choose.container">
+   <block class="Magento\Cms\Block\Block" name="choose">
+      <arguments>
+         <argument name="block_id" xsi:type="string">choose</argument>
+         <argument name="css_class" xsi:type="string">choose</argument>
+      </arguments>
+   </block>
 </referenceContainer>
 <referenceContainer name="header.panel">
    <block class="Magento\Framework\View\Element\Html\Links" name="header.links">

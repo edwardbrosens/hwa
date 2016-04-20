@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461094420;s:6:"expire";i:9999999999;s:4:"tags";s:37:"58f_LAYOUT_GENERAL_CACHE_TAG,58f_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461174391;s:6:"expire";i:9999999999;s:4:"tags";s:37:"58f_LAYOUT_GENERAL_CACHE_TAG,58f_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><layout id="1column"><update handle="empty"/>
 <referenceContainer name="page.wrapper">
@@ -49,6 +49,24 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461094420;s:6:"expire";i:9999999999;s:4:"t
    <container name="choose.container" as="choose_container" htmlTag="div" htmlClass="choose-container" label="Choose" after="main.content"/>
    <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
 </referenceContainer>
+<referenceContainer name="content">
+   <container name="steps.container" htmlClass="steps" htmlTag="div">
+      <block class="Magento\Cms\Block\Block" name="block-header-image">
+         <arguments>
+            <argument name="block_id" xsi:type="string">steps</argument>
+            <argument name="css_class" xsi:type="string">steps</argument>
+         </arguments>
+      </block>
+   </container>
+</referenceContainer>
+<referenceContainer name="choose.container">
+   <block class="Magento\Cms\Block\Block" name="choose">
+      <arguments>
+         <argument name="block_id" xsi:type="string">choose</argument>
+         <argument name="css_class" xsi:type="string">choose</argument>
+      </arguments>
+   </block>
+</referenceContainer>
 <referenceContainer name="header.panel">
    <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
       <arguments>
@@ -63,7 +81,11 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461094420;s:6:"expire";i:9999999999;s:4:"t
       <container name="sidebar.additional" as="sidebar_additional" label="Sidebar Additional"/>
    </container>
 </referenceContainer>
+<referenceContainer name="steps.container" remove="true"/>
+<referenceContainer name="choose.container" remove="true"/>
+<referenceContainer name="compare-link-wrapper" remove="true"/>
 </layout><layout id="2columns-right"><update handle="2columns-left"/>
+<referenceContainer name="compare-link-wrapper" remove="true"/>
 </layout><layout id="3columns"><update handle="2columns-left"/>
 </layout><layout id="1column"><update handle="empty"/>
 <referenceContainer name="page.wrapper">
@@ -114,6 +136,24 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461094420;s:6:"expire";i:9999999999;s:4:"t
    <container name="choose.container" as="choose_container" htmlTag="div" htmlClass="choose-container" label="Choose" after="main.content"/>
    <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
 </referenceContainer>
+<referenceContainer name="content">
+   <container name="steps.container" htmlClass="steps" htmlTag="div">
+      <block class="Magento\Cms\Block\Block" name="block-header-image">
+         <arguments>
+            <argument name="block_id" xsi:type="string">steps</argument>
+            <argument name="css_class" xsi:type="string">steps</argument>
+         </arguments>
+      </block>
+   </container>
+</referenceContainer>
+<referenceContainer name="choose.container">
+   <block class="Magento\Cms\Block\Block" name="choose">
+      <arguments>
+         <argument name="block_id" xsi:type="string">choose</argument>
+         <argument name="css_class" xsi:type="string">choose</argument>
+      </arguments>
+   </block>
+</referenceContainer>
 <referenceContainer name="header.panel">
    <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
       <arguments>
@@ -128,6 +168,10 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461094420;s:6:"expire";i:9999999999;s:4:"t
       <container name="sidebar.additional" as="sidebar_additional" label="Sidebar Additional"/>
    </container>
 </referenceContainer>
+<referenceContainer name="steps.container" remove="true"/>
+<referenceContainer name="choose.container" remove="true"/>
+<referenceContainer name="compare-link-wrapper" remove="true"/>
 </layout><layout id="2columns-right"><update handle="2columns-left"/>
+<referenceContainer name="compare-link-wrapper" remove="true"/>
 </layout><layout id="3columns"><update handle="2columns-left"/>
 </layout></layouts>
