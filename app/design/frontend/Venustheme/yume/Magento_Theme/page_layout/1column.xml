@@ -28,8 +28,26 @@
         <container name="choose.container" as="choose_container" htmlTag="div" htmlClass="choose-container" label="Choose" after="main.content" />
 
         <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer" />
-    </referenceContainer>
 
+        <referenceContainer name="choose.container">
+            <block class="Magento\Cms\Block\Block" name="choose">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">choose</argument>
+                    <argument name="css_class" xsi:type="string">choose</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceContainer name="custom.contact">
+            <block class="Magento\Cms\Block\Block" name="customcontact">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">custom-contact</argument>
+                    <argument name="css_class" xsi:type="string">custom-contact</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+    </referenceContainer>
 
     <referenceContainer name="content">
         <container name="steps.container" htmlClass="steps" htmlTag="div">
@@ -42,16 +60,6 @@
         </container>
     </referenceContainer>
 
-
-    <referenceContainer name="choose.container">
-        <block class="Magento\Cms\Block\Block" name="choose">
-            <arguments>
-                <argument name="block_id" xsi:type="string">choose</argument>
-                <argument name="css_class" xsi:type="string">choose</argument>
-            </arguments>
-        </block>
-    </referenceContainer>
-    
     <referenceContainer name="header.panel">
         <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
             <arguments>

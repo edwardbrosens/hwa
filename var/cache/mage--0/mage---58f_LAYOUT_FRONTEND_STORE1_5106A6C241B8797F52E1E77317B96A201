@@ -1,0 +1,99 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461525580;s:6:"expire";i:9999999999;s:4:"tags";s:46:"58f_HOME,58f_LAYOUT_GENERAL_CACHE_TAG,58f_MAGE";}
+<container name="root">
+   <container name="after.body.start" as="after.body.start" before="-" label="Page Top"/>
+   <container name="page.wrapper" as="page_wrapper" htmlTag="div" htmlClass="page-wrapper">
+      <container name="global.notices" as="global_notices" before="-"/>
+      <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+         <container name="columns.top" label="Before Main Columns"/>
+         <container name="columns" htmlTag="div" htmlClass="columns">
+            <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+         </container>
+      </container>
+      <container name="page.bottom.container" as="page_bottom_container" label="Before Page Footer Container" after="main.content" htmlTag="div" htmlClass="page-bottom"/>
+      <container name="before.body.end" as="before_body_end" after="-" label="Page Bottom"/>
+   </container>
+</container>
+<move element="catalog.leftnav" destination="category.product.list.additional" before="-"/>
+<container name="root">
+   <container name="after.body.start" as="after.body.start" before="-" label="Page Top"/>
+   <container name="page.wrapper" as="page_wrapper" htmlTag="div" htmlClass="page-wrapper">
+      <container name="global.notices" as="global_notices" before="-"/>
+      <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+         <container name="columns.top" label="Before Main Columns"/>
+         <container name="columns" htmlTag="div" htmlClass="columns">
+            <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+         </container>
+      </container>
+      <container name="page.bottom.container" as="page_bottom_container" label="Before Page Footer Container" after="main.content" htmlTag="div" htmlClass="page-bottom"/>
+      <container name="before.body.end" as="before_body_end" after="-" label="Page Bottom"/>
+   </container>
+</container>
+<move element="catalog.leftnav" destination="category.product.list.additional" before="-"/>
+<update handle="empty"/>
+<referenceContainer name="page.wrapper">
+   <container name="header.container" as="header_container" label="Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content"/>
+   <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
+   <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
+</referenceContainer>
+<move element="catalog.leftnav" destination="content.top" after="-"/>
+<update handle="empty"/>
+<referenceContainer name="header.container">
+   <referenceBlock name="skip_to_content" remove="true"/>
+   <referenceBlock name="top.links" remove="true"/>
+   <container name="top.nav" htmlTag="div" htmlClass="top-nav" before="header.panel">
+      <block class="Magento\Framework\View\Element\Template" name="toppie" template="Magento_Theme::html/topnav.phtml"/>
+   </container>
+</referenceContainer>
+<referenceContainer name="page.wrapper">
+   <container name="header.container" as="header_container" label="Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content"/>
+   <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
+   <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
+</referenceContainer>
+<referenceContainer name="header.container">
+   <referenceContainer name="header-wrapper">
+      <container name="header-block-container" label="Header Block" htmlTag="div" htmlClass="header-block-container" before="logo">
+         <block class="Magento\Framework\View\Element\Template" name="toppie" template="Magento_Theme::html/topnav.phtml"/>
+         <block class="Magento\Cms\Block\Block" name="block-header-image">
+            <arguments>
+               <argument name="block_id" xsi:type="string">block-header-image</argument>
+            </arguments>
+         </block>
+      </container>
+   </referenceContainer>
+</referenceContainer>
+<update handle="empty"/>
+<referenceContainer name="page.wrapper">
+   <container name="header.container" as="header_container" label="Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content"/>
+   <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
+   <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
+</referenceContainer>
+<move element="catalog.leftnav" destination="content.top" after="-"/>
+<update handle="empty"/>
+<referenceContainer name="header.container">
+   <referenceBlock name="skip_to_content" remove="true"/>
+   <referenceBlock name="top.links" remove="true"/>
+   <container name="top.nav" htmlTag="div" htmlClass="top-nav" before="header.panel">
+      <block class="Magento\Framework\View\Element\Template" name="toppie" template="Magento_Theme::html/topnav.phtml"/>
+   </container>
+</referenceContainer>
+<referenceContainer name="page.wrapper">
+   <container name="header.container" as="header_container" label="Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content"/>
+   <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
+   <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
+</referenceContainer>
+<referenceContainer name="header.container">
+   <referenceContainer name="header-wrapper">
+      <container name="header-block-container" label="Header Block" htmlTag="div" htmlClass="header-block-container" before="logo">
+         <block class="Magento\Framework\View\Element\Template" name="toppie" template="Magento_Theme::html/topnav.phtml"/>
+         <block class="Magento\Cms\Block\Block" name="block-header-image">
+            <arguments>
+               <argument name="block_id" xsi:type="string">block-header-image</argument>
+            </arguments>
+         </block>
+      </container>
+   </referenceContainer>
+</referenceContainer>
+<update handle="1column"/>
+<remove name="right"/>
+<update handle="1column"/>
+<remove name="right"/>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <update handle="empty"/>
+    <referenceContainer name="header.container">
+        <referenceBlock name="skip_to_content" remove="true" />
+        <referenceBlock name="top.links" remove="true" />
+        <container name="top.nav" htmlTag="div" htmlClass="top-nav" before="header.panel">
+            <block class="Magento\Framework\View\Element\Template" name="toppie" template="Magento_Theme::html/topnav.phtml" />
+        </container>
+    </referenceContainer>
+
+
+
+    <referenceContainer name="page.wrapper">
+        <container name="header.container" as="header_container" label="Page Header Container"  htmlTag="header" htmlClass="page-header" before="main.content"/>
+        <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
+        <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer" />
+    </referenceContainer>
+
+
+
+    <referenceContainer name="header.container">
+        <referenceContainer name="header-wrapper">
+            <container name="header-block-container" label="Header Block" htmlTag="div" htmlClass="header-block-container" before="logo">
+                <block class="Magento\Framework\View\Element\Template" name="toppie" template="Magento_Theme::html/topnav.phtml" />
+                <block class="Magento\Cms\Block\Block" name="block-header-image">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">block-header-image</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+    </referenceContainer>
+</layout>

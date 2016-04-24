@@ -43,13 +43,12 @@ module.exports = {
     // },
     ambacht: {
         area: 'frontend',
-        name: 'Venustheme/yume',
+        name: 'AmbachtTheme/ambacht',
         locale: 'nl_NL',
         files: [
-           'css/styles-m',
-           'css/styles-l',
-           'css/bootstrap-tiny',
-           'css/stylesheet'
+            'css/main-theme',
+            'css/styles-m',
+            'css/styles-l'
         ],
         dsl: 'less'
     },
