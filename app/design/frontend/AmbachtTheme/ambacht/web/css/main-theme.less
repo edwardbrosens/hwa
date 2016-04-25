@@ -1,6 +1,21 @@
 @import "libs/_font-awesome";
 @import "fonts";
 
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  display: inline-block;
+}
+.clearfix {
+  display: block;
+}
+
+
 // Nothing
 @mainBrown: #2b2829;
 
@@ -72,4 +87,42 @@
   }
 
 
+}
+
+.action.nav-toggle {
+  display: none;
+}
+
+// HOME
+.page-layout-home {
+  .minicart-wrapper,.block-search, .nav-sections, .page-title-wrapper, .modals-wrapper {
+    display: none;
+  }
+
+}
+
+main {
+  padding: 60px 30px !important;
+  display: inline-block;
+  :after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+
+  img.left-image {
+    margin-right: 20px;
+  }
+
+  p,.p1 {
+    font-family: 'shree';
+    font-size: 13px;
+  }
+
+  .p2 {
+    font-family: 'honeycreamregular';
+    font-size: 30px;
+  }
 }
