@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461589985;s:6:"expire";i:9999999999;s:4:"tags";s:46:"58f_HOME,58f_LAYOUT_GENERAL_CACHE_TAG,58f_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461602891;s:6:"expire";i:9999999999;s:4:"tags";s:46:"58f_HOME,58f_LAYOUT_GENERAL_CACHE_TAG,58f_MAGE";}
 <container name="root">
    <container name="after.body.start" as="after.body.start" before="-" label="Page Top"/>
    <container name="page.wrapper" as="page_wrapper" htmlTag="div" htmlClass="page-wrapper">
@@ -61,6 +61,13 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461589985;s:6:"expire";i:9999999999;s:4:"t
       </container>
    </referenceContainer>
 </referenceContainer>
+<referenceContainer name="footer-container">
+   <referenceContainer name="footer">
+      <block name="store_switcher" as="store_switcher" remove="true"/>
+      <block name="footer_links" remove="true"/>
+      <block class="Magento\Framework\View\Element\Template" name="footer" template="Magento_Theme::html/footer.phtml"/>
+   </referenceContainer>
+</referenceContainer>
 <update handle="empty"/>
 <referenceContainer name="page.wrapper">
    <container name="header.container" as="header_container" label="Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content"/>
@@ -93,7 +100,54 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1461589985;s:6:"expire";i:9999999999;s:4:"t
       </container>
    </referenceContainer>
 </referenceContainer>
+<referenceContainer name="footer-container">
+   <referenceContainer name="footer">
+      <block name="store_switcher" as="store_switcher" remove="true"/>
+      <block name="footer_links" remove="true"/>
+      <block class="Magento\Framework\View\Element\Template" name="footer" template="Magento_Theme::html/footer.phtml"/>
+   </referenceContainer>
+</referenceContainer>
 <update handle="1column"/>
 <remove name="right"/>
+<referenceContainer name="page.wrapper">
+   <container name="choose.container" htmlTag="div" htmlClass="choose-container" before="footer"/>
+   <container name="contact.container" htmlTag="div" htmlClass="contact-container" before="footer" after="choose.container"/>
+</referenceContainer>
+<referenceContainer name="choose.container">
+   <block class="Magento\Cms\Block\Block" name="choose">
+      <arguments>
+         <argument name="block_id" xsi:type="string">choose</argument>
+         <argument name="css_class" xsi:type="string">choose</argument>
+      </arguments>
+   </block>
+</referenceContainer>
+<referenceContainer name="contact.container">
+   <block class="Magento\Cms\Block\Block" name="contact">
+      <arguments>
+         <argument name="block_id" xsi:type="string">contact</argument>
+         <argument name="css_class" xsi:type="string">contact</argument>
+      </arguments>
+   </block>
+</referenceContainer>
 <update handle="1column"/>
 <remove name="right"/>
+<referenceContainer name="page.wrapper">
+   <container name="choose.container" htmlTag="div" htmlClass="choose-container" before="footer"/>
+   <container name="contact.container" htmlTag="div" htmlClass="contact-container" before="footer" after="choose.container"/>
+</referenceContainer>
+<referenceContainer name="choose.container">
+   <block class="Magento\Cms\Block\Block" name="choose">
+      <arguments>
+         <argument name="block_id" xsi:type="string">choose</argument>
+         <argument name="css_class" xsi:type="string">choose</argument>
+      </arguments>
+   </block>
+</referenceContainer>
+<referenceContainer name="contact.container">
+   <block class="Magento\Cms\Block\Block" name="contact">
+      <arguments>
+         <argument name="block_id" xsi:type="string">contact</argument>
+         <argument name="css_class" xsi:type="string">contact</argument>
+      </arguments>
+   </block>
+</referenceContainer>

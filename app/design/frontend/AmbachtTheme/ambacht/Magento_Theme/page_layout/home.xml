@@ -8,4 +8,32 @@
 <layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
     <update handle="1column"/>
     <remove name="right" />
+
+
+   <referenceContainer name="page.wrapper">
+       <container name="choose.container" htmlTag="div" htmlClass="choose-container" before="footer" />
+       <container name="contact.container" htmlTag="div" htmlClass="contact-container" before="footer" after="choose.container" />
+   </referenceContainer>
+
+    <referenceContainer name="choose.container">
+        <block class="Magento\Cms\Block\Block" name="choose">
+            <arguments>
+                <argument name="block_id" xsi:type="string">choose</argument>
+                <argument name="css_class" xsi:type="string">choose</argument>
+            </arguments>
+        </block>
+    </referenceContainer>
+
+    <referenceContainer name="contact.container">
+        <block class="Magento\Cms\Block\Block" name="contact">
+            <arguments>
+                <argument name="block_id" xsi:type="string">contact</argument>
+                <argument name="css_class" xsi:type="string">contact</argument>
+            </arguments>
+        </block>
+    </referenceContainer>
+
+
+
+
 </layout>
