@@ -24,6 +24,7 @@
 // Nothing
 @mainBrown: #2b2829;
 @lightGreen: #f4f5ef;
+@mainGreen: #45aba3;
 
 .topnav {
   height: 57px;
@@ -148,5 +149,50 @@ main {
   h1 {
     font-family: 'honeycreamregular';
     text-align: center;
+  }
+}
+
+.block.newsletter {
+  display: none;
+}
+
+.basket {
+  height: 200px;
+  background-image: url('../images/basket.jpg');
+  -webkit-background-size:200px 159px;
+  background-size:200px 159px;
+  background-position: center right;
+  background-repeat:no-repeat;
+}
+
+.logo-bottom {
+  width: 300px;
+  height: 123px;
+  background-repeat:no-repeat;
+  background-image: url('../images/logo-bottom.png');
+  position: absolute;
+  margin: 0 auto;
+  margin-top: -120px;
+}
+
+.footer-bottom {
+  position: relative;
+  background-color: @mainGreen;
+  padding: 50px;
+  background-image: url('../images/plant.png');
+  background-position: 30% center;
+  background-repeat:no-repeat;
+}
+
+.address-holder {
+  text-align: center;
+  color: white;
+  position: relative;
+  font-family: 'shree';
+  h4 {
+    font-family: 'shree';
+    font-weight: lighter;
+    font-size: 16px;
+    text-transform: uppercase;
   }
 }

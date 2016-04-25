@@ -6,7 +6,42 @@
 
 ?>
 <div class="footer-container">
-    <div class="footer">
-      poep
+    <div class="row">
+        <div class="col-sm-12 basket">
+
+        </div>
+    </div>
+    <div class="row footer-bottom">
+        <div class="container">
+            <div class="col-sm-4">
+                <ul>
+                    <li><a href=""><img src="" alt=""> /hetwareambacht</a></li>
+                    <li><a href=""><img src="" alt=""> @hetwareaambacht</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <div class="address-holder">
+                    <div class="logo-bottom"></div>
+                    <br/>
+                    <h4>Het Ware Ambacht</h4>
+                    <p>binnenhof 23<br />5141 BW Waalwijk<br/><br/>06-14382485<br/><br/>eline@hetwareambacht.nl</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <form class="form subscribe" novalidate="novalidate" action="/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail" _lpchecked="1">
+                    <div class="field newsletter">
+                        <label class="label" for="newsletter"><span>Sign Up for Our Newsletter:</span></label>
+                        <div class="control">
+                            <input name="email" type="email" id="newsletter" placeholder="Enter your email address" data-validate="{required:true, 'validate-email':true}">
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="action subscribe primary" title="Subscribe" type="submit">
+                            <span>Subscribe</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </div>

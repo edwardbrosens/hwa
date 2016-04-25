@@ -39,12 +39,11 @@
     </referenceContainer>
 
 
-    <referenceContainer name="footer-container">
-        <referenceContainer name="footer">
-            <block name="store_switcher" as="store_switcher" remove="true" />
-            <block name="footer_links" remove="true" />
-            <block class="Magento\Framework\View\Element\Template" name="footer" template="Magento_Theme::html/footer.phtml"/>
-        </referenceContainer>
+    <referenceContainer name="footer">
+        <referenceBlock name="store_switcher" as="store_switcher" remove="true"/>
+        <referenceBlock name="footer_links" remove="true"/>
+        <block class="Magento\Framework\View\Element\Template" name="ambacht.footer"
+               template="Magento_Theme::html/footer.phtml"/>
     </referenceContainer>
 
 
